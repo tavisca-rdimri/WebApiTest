@@ -1,0 +1,14 @@
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\bin\Debug\netcoreapp2.2\WebApiTest.deps.json
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\bin\Debug\netcoreapp2.2\WebApiTest.runtimeconfig.json
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\bin\Debug\netcoreapp2.2\WebApiTest.runtimeconfig.dev.json
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\bin\Debug\netcoreapp2.2\WebApiTest.dll
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\bin\Debug\netcoreapp2.2\WebApiTest.pdb
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\obj\Debug\netcoreapp2.2\WebApiTest.csprojAssemblyReference.cache
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\obj\Debug\netcoreapp2.2\WebApiTest.csproj.CoreCompileInputs.cache
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\obj\Debug\netcoreapp2.2\WebApiTest.RazorAssemblyInfo.cache
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\obj\Debug\netcoreapp2.2\WebApiTest.RazorAssemblyInfo.cs
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\obj\Debug\netcoreapp2.2\WebApiTest.AssemblyInfoInputs.cache
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\obj\Debug\netcoreapp2.2\WebApiTest.AssemblyInfo.cs
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\obj\Debug\netcoreapp2.2\WebApiTest.RazorTargetAssemblyInfo.cache
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\obj\Debug\netcoreapp2.2\WebApiTest.dll
+C:\Users\rdimri\source\repos\WebApiTest\WebApiTest\obj\Debug\netcoreapp2.2\WebApiTest.pdb
