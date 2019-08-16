@@ -9,12 +9,7 @@ pipeline {
             }
         }
 
-        stage('test') {
-            steps {
-                bat 'echo test'
-                bat 'dotnet test XUnitTestProject1/XUnitTestProject1.csproj -p:Configiration=release -v:q'
-            }
-        }
+        
 
          stage('deploy') {
             steps {
