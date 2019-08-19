@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\WebApiTest",
+    "\\WebApiTest\\bin",
     "\\WebApiTest\\bin\\Debug",
     "\\WebApiTest\\bin\\Debug\\netcoreapp2.2",
+    "\\WebApiTest\\bin\\Debug\\netcoreapp2.2\\publish",
     "\\WebApiTest\\bin\\Release"
   ],
-  "SelectedNode": "\\WebApiTest\\Program.cs",
+  "SelectedNode": "\\Dockerfile",
   "PreviewInSolutionExplorer": false
 }

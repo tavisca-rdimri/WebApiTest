@@ -20,6 +20,6 @@ namespace WebApiTest
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseUrls(urls: "https://*:9098");
+                .UseUrls(urls: "https://*:8990");
     }
 }
