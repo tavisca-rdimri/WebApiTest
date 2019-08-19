@@ -49,7 +49,7 @@ pipeline {
         {
             steps{
                     bat 'docker pull rdimri/WebApiTest:latest'
-            `````}
+            	 }
         }
 		
 		stage('Run docker image')
