@@ -33,7 +33,7 @@ pipeline {
         {
             steps{
                     
-                    bat 'docker tag aspnetapp:latest rdimri/WebApiTest:latest'
+                    bat 'docker tag aspnetapp:latest rdimri/webapitest:latest'
                     bat 'docker push rdimri/WebApiTest:latest'
             }
         }
@@ -48,14 +48,14 @@ pipeline {
 		stage('Pull docker image')
         {
             steps{
-                    bat 'docker pull rdimri/WebApiTest:latest'
+                    bat 'docker pull rdimri/webapitest:latest'
             	 }
         }
 		
 		stage('Run docker image')
         {
             steps{
-                    bat 'docker run -p 8990:8990 --name webapicontainer rdimri/WebApiTest'
+                    bat 'docker run -p 8990:8990 --name webapicontainer rdimri/webapitest'
 				 }
         }
 		
