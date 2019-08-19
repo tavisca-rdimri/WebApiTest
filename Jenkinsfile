@@ -34,7 +34,7 @@ pipeline {
             steps{
                     
                     bat 'docker tag aspnetapp:latest rdimri/webapitest:latest'
-                    bat 'docker push rdimri/WebApiTest:latest'
+                    bat 'docker push rdimri/webapitest:latest'
             }
         }
 		
