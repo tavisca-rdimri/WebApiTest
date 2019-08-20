@@ -9,6 +9,8 @@ pipeline {
             }
         }
 		
+		
+		
         stage('publish') {
             steps {
                 bat 'dotnet publish WebApiTest.sln -p:Configuration=release -v:q'
@@ -22,6 +24,16 @@ pipeline {
             }
         }
 		
+		 stage('SonarQube stage') {
+        	
+        	steps{
+        		echo 'Docker run the image pulled from dockerhub'
+				bat 'dotnet C:/Users/rdimri/Downloads/sonarqube-7.9.1/SonarScanner.MSBuild.dll begin /d:sonar.login=admin /d:sonar.password=admin /k:"8daa1a472bb80daf4e8437f6577583fb13887c40"'
+				bat 'dotnet build'
+				bat 'dotnet C:/Users/rdimri/Downloads/sonarqube-7.9.1/SonarScanner.MSBuild.dll end /d:sonar.login=admin /d:sonar.password=admin'
+        	}
+        }
+		
 		stage('Login to Docker')
         {
             steps{
@@ -33,8 +45,8 @@ pipeline {
         {
             steps{
                     
-                    bat 'docker tag aspnetapp:latest rdimri/WebApiTest:latest'
-                    bat 'docker push rdimri/WebApiTest:latest'
+                    bat 'docker tag aspnetapp:latest rdimri/webapitest:latest'
+                    bat 'docker push rdimri/webapitest:latest'
             }
         }
 		
@@ -48,16 +60,18 @@ pipeline {
 		stage('Pull docker image')
         {
             steps{
-                    bat 'docker pull rdimri/WebApiTest:latest'
-            `````}
+                    bat 'docker pull rdimri/webapitest:latest'
+            	 }
         }
 		
 		stage('Run docker image')
         {
             steps{
-                    bat 'docker run -p 8990:8990 --name webapicontainer rdimri/WebApiTest'
+                    bat 'docker run -p 8990:8990 --name webapicontainer rdimri/webapitest'
 				 }
         }
+		
+		
 		
 		
     }
@@ -71,4 +85,3 @@ pipeline {
         }
     }
 }
-

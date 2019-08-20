@@ -1,0 +1,6 @@
+projectKey=ref
+serverUrl=http://localhost:9000
+serverVersion=7.9.1.27448
+dashboardUrl=http://localhost:9000/dashboard?id=ref
+ceTaskId=AWyuTwmWi7IwaOof_Lfj
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWyuTwmWi7IwaOof_Lfj
