@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+		    sh 'export PATH=/usr/local/share/dotnet:$PATH'
                 sh 'dotnet build WebApiTest.sln -p:Configuration=release -v:q'
             
                 sh 'echo deleted workspace'
