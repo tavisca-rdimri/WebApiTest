@@ -5,8 +5,6 @@ pipeline {
             steps {
 		    sh 'export PATH=/usr/local/share/dotnet:$PATH'
                 sh '/usr/local/share/dotnet/dotnet build WebApiTest.sln -p:Configuration=release -v:q'
-            
-                sh 'echo deleted workspace'
             }
         }
 		
@@ -14,7 +12,7 @@ pipeline {
 		
         stage('publish') {
             steps {
-                sh 'dotnet publish WebApiTest.sln -p:Configuration=release -v:q'
+                sh '/usr/local/share/dotnet/dotnet publish WebApiTest.sln -p:Configuration=release -v:q'
             }
         }
 		
@@ -29,9 +27,9 @@ pipeline {
         	
         	steps{
         		echo 'Docker run the image pulled from dockerhub'
-				sh 'dotnet C:/Users/rdimri/Downloads/sonarqube-7.9.1/SonarScanner.MSBuild.dll begin /d:sonar.login=admin /d:sonar.password=admin /k:"8daa1a472bb80daf4e8437f6577583fb13887c40"'
-				sh 'dotnet build'
-				sh 'dotnet C:/Users/rdimri/Downloads/sonarqube-7.9.1/SonarScanner.MSBuild.dll end /d:sonar.login=admin /d:sonar.password=admin'
+				sh '/usr/local/share/dotnet/dotnet C:/Users/rdimri/Downloads/sonarqube-7.9.1/SonarScanner.MSBuild.dll begin /d:sonar.login=admin /d:sonar.password=admin /k:"8daa1a472bb80daf4e8437f6577583fb13887c40"'
+				sh '/usr/local/share/dotnet/dotnet build'
+				sh '/usr/local/share/dotnet/dotnet C:/Users/rdimri/Downloads/sonarqube-7.9.1/SonarScanner.MSBuild.dll end /d:sonar.login=admin /d:sonar.password=admin'
         	}
         }
 		
